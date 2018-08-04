@@ -14,11 +14,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-from django.contrib import admin
+from django.conf import settings
+from django.conf.urls.static import static
 
 from handler import views
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^serve/([a-zA-Z0-9-_/]+)$', views.ServeFiles, name="files serving"),
+    url(r'^upload/$', views.ProgressBarUploadView.as_view(), name="upload"),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
