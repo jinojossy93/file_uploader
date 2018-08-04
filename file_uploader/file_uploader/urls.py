@@ -16,6 +16,9 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from handler import views
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^serve/([a-zA-Z0-9-_/]+)$', views.ServeFiles, name="files serving"),
 ]
