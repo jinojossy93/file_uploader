@@ -1,4 +1,5 @@
-*.pyc
+*/*.pyc
+db.sqlite3
 file_uploader/.idea/*
 # Byte-compiled / optimized / DLL files
 __pycache__/
