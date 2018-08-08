@@ -20,4 +20,4 @@ python manage.py migrate
 ```bash
 python manage.py runserver
 
-Please go [here](http://127.0.0.1:8000/upload/ to see your file uploader on your browser.
+Please go [here](http://127.0.0.1:8000/upload/) to see your file uploader on your browser.
