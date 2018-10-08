@@ -1,7 +1,7 @@
-File Uploader Sample
+File Uploader
 ==================================================================
 
-This repo contains file uploader code sample using Django >= 1.8
+This repo contains file uploader code using Django >= 1.8
 
 ## Running Locally
 
